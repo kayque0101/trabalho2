@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .exercise-suggestions {
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            display: none; /* Esconde inicialmente */
+        }
+        .exercise-suggestions p {
+            margin: 5px 0;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+        select {
+            margin-right: 10px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 600px; /* Define uma largura máxima */
+            height: 450px;
+            border: none;
+            margin-top: 20px;
+            display: block; /* Garante que o iframe seja exibido como um bloco */
+            margin-left: auto;
+            margin-right: auto; /* Centraliza o mapa */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <button><a href="index.html">Início</a></button>
+        <button><a href="quem_somos.html">Quem somos</a></button>
+        <button><a href="planos.html">Planos</a></button>
+        <button><a href="contato.html">Contato</a></button>
+    </nav>
+
+    <h2>Bem-vindo à nossa academia!</h2>
+    <p>Aqui iremos falar um pouco sobre a nossa academia e mostraremos os planos em geral.</p>
+    <p>Clicando no botão abaixo iremos mostrar como funciona a nossa academia.</p>
+    <button><a href="quem_somos.html">Sobre a academia</a></button>
+    
+    <p>Abaixo separamos algumas sugestões de exercícios para melhorar a performance do seu treino:</p>
+    <p>Escolha um objetivo e veja as sugestões de exercícios:</p>
+
+    <select id="goalSelect">
+        <option value="">Selecione um objetivo</option>
+        <option value="perda_peso">Perda de Peso</option>
+        <option value="ganho_massa">Ganho de Massa Muscular</option>
+        <option value="resistencia">Melhora de Resistência</option>
+    </select>
+    <button id="getSuggestionsButton">Obter Sugestões</button>
+    
+    <!-- Div para sugestões de exercícios -->
+    <div id="exerciseSuggestions" class="exercise-suggestions"></div>
+
+    <!-- Mapa do Google -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.034595940025!2d-47.94133498647641!3d-19.75368469999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bad036dc90da0b%3A0x7d51e2721bc7f52e!2sCentro%20de%20Forma%C3%A7%C3%A3o%20Profissional%20Fidelis%20Reis%20-%20SENAI%20Uberaba!5e0!3m2!1spt-BR!2sbr!4v1730848204687!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+
+    <script src="./assets/javascript/index.js"></script> <!-- Link para o arquivo JS -->
+    <footer>
+        <p>&copy; 2024 Michelins academia. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+    background-image: url(../imagens/1.png);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+}
+body::after {
+    content: ""; /* Cria o pseudo-elemento */
+    position: absolute; /* Posiciona acima do corpo, mas abaixo do conteúdo */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Camada semitransparente preta */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+nav {
+    background-color: #333; /* Cor de fundo da barra */
+    padding: 15px 0; /* Espaçamento interno aumentado */
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Alinha ao topo da página */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total da tela */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    margin: 0; /* Remove margens para estar na borda */
+}
+
+nav button {
+    color: #fff; /* Cor de texto dos botões na barra de navegação */
+    font-size: 18px; /* Aumenta o tamanho da fonte dos botões */
+    margin: 0 15px; /* Aumenta o espaçamento entre os botões */
+    color: rgb(36, 124, 83);
+}
+
+nav button a {
+    color: #fff; /* Cor do texto dos links dentro dos botões */
+    text-decoration: none; /* Remove o sublinhado */
+}
+h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+
+#categoriesContainer {
+    display: flex;  /* Flexbox para disposição horizontal das categorias */
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.categoria:hover {
+    background-color: #d0d0d0;
+}
+
+#plansContainer {
+    display: flex;  /* Flexbox para disposição horizontal dos planos */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: #333  ;
+}
+
+.plano {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.plano:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: rgb(36, 124, 83);
+    color: rgb(254, 254, 254);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+#beneficioContainer ul {
+    list-style-type: disc;  /* Faz a lista aparecer com marcadores */
+    padding-left: 20px;  /* Adiciona um espaçamento à esquerda */
+    text-align: left;  /* Alinha os itens à esquerda */
+}
+
+#beneficioContainer li {
+    margin-bottom: 8px;  /* Adiciona um espaço entre os itens da lista */
+    color: #f8f8f8;  /* Define a cor do texto */
+}
+#plansContainer p {
+ color: #333;
+}
+li::marker{
+    color: #000000;
+}
+#beneficioContainer h3 {
+    color: #fff;
+}
+footer {
+    background-color: #333;  /* Cor de fundo do rodapé */
+    color: #fff;             /* Cor do texto */
+    text-align: center;      /* Centraliza o texto */
+    padding: 10px 0;         /* Espaçamento superior e inferior */
+    position: fixed;         /* Fixa o rodapé no fundo da página */
+    left: 0;                 /* Alinha à esquerda */
+    bottom: 0;               /* Alinha ao fundo da página */
+    width: 100%;             /* Largura total */
+    font-size: 14px;         /* Tamanho da fonte */
+    z-index: 1000;           /* Garante que o rodapé fique acima de outros elementos */
+}
+
+footer p {
+    margin: 0;               /* Remove margens para garantir que o texto fique centralizado */
+}

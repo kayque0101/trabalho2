@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Centraliza o texto */
+    background-image: url(../imagens/1.png);
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-repeat: no-repeat;
+    background-position: center top; /* Centraliza horizontalmente e afasta do topo */
+    padding-top: 50px; /* Ajusta a distância do topo */
+}
+
+/* Pseudo-elemento para a camada fosca */
+body::after {
+    content: ""; /* Cria o pseudo-elemento */
+    position: absolute; /* Posiciona acima do corpo, mas abaixo do conteúdo */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Camada semitransparente preta */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #333; /* Cor de fundo da barra */
+    padding: 15px 0; /* Espaçamento interno aumentado */
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Alinha ao topo da página */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total da tela */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    margin: 0; /* Remove margens para estar na borda */
+}
+
+nav button {
+    color: #fff; /* Cor de texto dos botões na barra de navegação */
+    font-size: 18px; /* Aumenta o tamanho da fonte dos botões */
+    margin: 0 15px; /* Aumenta o espaçamento entre os botões */
+}
+
+nav button a {
+    color: #fff; /* Cor do texto dos links dentro dos botões */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+button {
+    background-color: rgb(36, 124, 83); /* Cor do botão */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 15px; /* Arredonda os cantos */
+    padding: 15px 25px; /* Aumenta o espaçamento interno */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    font-size: 18px; /* Aumenta o tamanho da fonte nos botões */
+}
+
+button a {
+    color: rgb(235, 235, 235); /* Cor do texto dentro do botão */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 18px; /* Aumenta o tamanho da fonte do texto */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+}
+
+h2 {
+    color: aliceblue;
+    font-size: 32px; /* Aumenta o tamanho da fonte do título */
+}
+
+margin {
+    border: 0%;
+}
+
+.exercise-suggestions div {
+    border: none;
+}
+footer {
+    background-color: #333;  /* Cor de fundo do rodapé */
+    color: #fff;             /* Cor do texto */
+    text-align: center;      /* Centraliza o texto */
+    padding: 10px 0;         /* Espaçamento superior e inferior */
+    position: fixed;         /* Fixa o rodapé no fundo da página */
+    left: 0;                 /* Alinha à esquerda */
+    bottom: 0;               /* Alinha ao fundo da página */
+    width: 100%;             /* Largura total */
+    font-size: 14px;         /* Tamanho da fonte */
+    z-index: 1000;           /* Garante que o rodapé fique acima de outros elementos */
+}
+
+footer p {
+    margin: 0;               /* Remove margens para garantir que o texto fique centralizado */
+}

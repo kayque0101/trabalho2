@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato com Localização</title>
+    <link rel="stylesheet" href="./assets/css/contato.css">
+<body>
+    <nav>
+        <button><a href="index.html">Início</a></button>
+        <button><a href="quem_somos.html">Quem somos</a></button>
+        <button><a href="planos.html">Planos</a></button>
+        <button><a href="contato.html">Contato</a></button>
+    </nav>
+    <div class="form-container">
+        <h2>Formulário de Contato</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Número de Telefone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.034595940025!2d-47.94133498647641!3d-19.75368469999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bad036dc90da0b%3A0x7d51e2721bc7f52e!2sCentro%20de%20Forma%C3%A7%C3%A3o%20Profissional%20Fidelis%20Reis%20-%20SENAI%20Uberaba!5e0!3m2!1spt-BR!2sbr!4v1730848204687!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map"></div>
+        <div class="message" id="successMessage">
+            Dados enviados com sucesso!
+            
+<script src="./assets/javascript/contato.js" ></script>
+
+<footer>
+    <p>&copy; 2024 Space Fit. Todos os direitos reservados.</p>
+</footer>
+        </div>
+    </div>
+</body>
+</html>
